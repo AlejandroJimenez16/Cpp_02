@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 12:53:58 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/03 15:04:49 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/07 20:28:31 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 class Fixed
 {
 	private:
-		int _value;
+		int _fixedPointValue;
 		static const int _fractionalBits = 8;
 
 	public:

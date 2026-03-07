@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 16:38:04 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/07 13:28:28 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/07 20:32:24 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 Fixed::Fixed()
 {
 	std::cout << BOLD << MAGENTA << "Default constructor called" << RESET << std::endl;
-	_value = 0;
+	_fixedPointValue = 0;
 }
 
 // Int constructor
@@ -25,7 +25,7 @@ Fixed::Fixed(const int num)
 	std::cout << BOLD << GREEN << "Int constructor called" << RESET << std::endl;
     
 	// num << _fractionalBits == num * (2 ^ _fractionalBits) == num * 256
-	_value = num << _fractionalBits;
+	_fixedPointValue = num << _fractionalBits;
 }
 
 // Float constructor
@@ -33,7 +33,7 @@ Fixed::Fixed(const float num)
 {
 	std::cout << BOLD << GREEN << "Float constructor called" << RESET << std::endl;
 
-	_value = roundf(num * (1 << _fractionalBits));
+	_fixedPointValue = roundf(num * (1 << _fractionalBits));
 }
 
 // Copy constructor
@@ -48,7 +48,7 @@ Fixed& Fixed::operator=(const Fixed& object)
 {
 	std::cout << BOLD << YELLOW << "Copy assignment operator called" << RESET << std::endl;
 	if (this != &object)
-		_value = object._value;
+		_fixedPointValue = object._fixedPointValue;
 
 	return (*this);
 }
@@ -62,22 +62,22 @@ Fixed::~Fixed()
 int Fixed::getRawBits() const
 {
 	std::cout << BOLD << GREEN << "getRawBits member function called" << RESET << std::endl;
-	return _value;
+	return _fixedPointValue;
 }
 
 void Fixed::setRawBits(int const raw)
 {
-	_value = raw;
+	_fixedPointValue = raw;
 }
 
 float Fixed::toFloat(void) const
 {	
-	return ((float)_value / (float)(1 << _fractionalBits));
+	return ((float)_fixedPointValue / (float)(1 << _fractionalBits));
 }
 
 int Fixed::toInt(void) const
 {
-	return (_value >> _fractionalBits);
+	return (_fixedPointValue >> _fractionalBits);
 }
 
 std::ostream &operator<<(std::ostream &out, const Fixed& object)

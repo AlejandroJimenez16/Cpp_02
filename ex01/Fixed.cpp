@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 16:38:04 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/07 20:32:24 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/10 14:59:03 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ Fixed::Fixed(const int num)
 Fixed::Fixed(const float num)
 {
 	std::cout << BOLD << GREEN << "Float constructor called" << RESET << std::endl;
-
 	_fixedPointValue = roundf(num * (1 << _fractionalBits));
 }
 

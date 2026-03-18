@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 12:47:47 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/16 14:10:59 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/18 13:49:08 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,6 @@ int main(void)
 	std::cout << "\nInside:" << std::endl;
 	bsp(a, b, c, p4);
 	std::cout << "==============================" << std::endl;
+
+	return 0;
 }

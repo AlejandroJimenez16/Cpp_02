@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 16:10:46 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/07 20:31:36 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/18 13:50:32 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,15 +46,6 @@ class Fixed
 		int toInt( void ) const;
 };
 
-/*
-* Overload the << operator to print Fixed objects
-* Parameters:
-*	- out -> output stream where the object will be inserted (std::cout, ofstream, etc.)
-*	- object -> Fixed objct that will be printed
-*
-* Return:
-* 	-> Returns the same output stream to allow chaining of insertion operations
-*/
 std::ostream &operator<<(std::ostream &out, const Fixed& object);
 
 #endif

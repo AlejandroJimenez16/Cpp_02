@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 16:38:04 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/10 14:59:03 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/18 13:33:46 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,5 @@ int Fixed::toInt(void) const
 std::ostream &operator<<(std::ostream &out, const Fixed& object)
 {
 	out << object.toFloat();
-	
 	return (out);
 }

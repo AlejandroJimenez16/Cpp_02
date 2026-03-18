@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/13 19:57:44 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/16 14:13:45 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/03/18 13:52:48 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include "Fixed.hpp"
 #include <iostream>
-#include <cmath>
 
 #define RESET   "\033[0m"
 #define BOLD	"\033[1m"
